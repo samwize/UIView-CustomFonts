@@ -7,8 +7,12 @@
 
 
 /**
- How to use:
- View types affected: UILabel, UIButton, UITextField, UITexView, and UINavigationBar
+ View types affected: 
+ - UILabel
+ - UIButton
+ - UITextField
+ - UITexView
+ - UINavigationBar
 */
 
 
@@ -33,7 +37,28 @@
         UIButton *button = (UIButton *)self;
         button.titleLabel.font = [UIFont fontWithName:fontFamily size:button.titleLabel.font.pointSize];
     }
+    
+    if ([self isKindOfClass:[UITextField class]]) {
+        UITextField *textfield = (UITextField *)self;
+        textfield.font = [UIFont fontWithName:fontFamily size:textfield.font.pointSize];
+    }
 
+    if ([self isKindOfClass:[UITextView class]]) {
+        UITextView *textview = (UITextView *)self;
+        textview.font = [UIFont fontWithName:fontFamily size:textview.font.pointSize];
+    }
+    
+    if ([self isKindOfClass:[UINavigationBar class]]) {
+        UINavigationBar *navbar = (UINavigationBar *)self;
+        UIFont *font = (navbar.titleTextAttributes)[NSFontAttributeName];
+        int fontSize = font.pointSize;  // Default navbar title font size
+        if (font == nil)
+            fontSize = 18;
+        NSMutableDictionary *attributes = [NSMutableDictionary dictionaryWithDictionary:navbar.titleTextAttributes];
+        attributes[NSFontAttributeName] = [UIFont fontWithName:fontFamily size:fontSize];
+        navbar.titleTextAttributes = attributes;
+    }
+    
     // If to affect subviews, recursively call this method on each subview
     if (affectSubviews) {
         for (UIView *subviews in self.subviews) {
