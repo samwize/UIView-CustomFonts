@@ -16,6 +16,18 @@ it simply add the following line to your Podfile:
 
     pod "UIView+CustomFonts"
 
+In your view controller, import the UIView category header file.
+
+    #import "UIView+CustomFonts.h"
+
+Set the font family for the view in `viewDidLoad`.
+
+    - (void)viewDidLoad
+    {
+        [super viewDidLoad];
+        [self.view setFontFamily:@"MuseoSans-500"];
+    }
+
 ## Author
 
 Junda, junda@just2us.com
