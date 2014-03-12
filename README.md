@@ -5,14 +5,12 @@
 
 ## Usage
 
-To run the example project; clone the repo, and run `pod install` from the Example directory first.
+To run the Xcode project; clone the repo, and run `pod install`.
 
-## Requirements
 
 ## Installation
 
-UIView+CustomFonts is available through [CocoaPods](http://cocoapods.org), to install
-it simply add the following line to your Podfile:
+UIView+CustomFonts is available through [CocoaPods](http://cocoapods.org), to install, simply add the following line to your Podfile:
 
     pod "UIView+CustomFonts"
 
@@ -27,6 +25,10 @@ Set the font family for the view in `viewDidLoad`.
         [super viewDidLoad];
         [self.view setFontFamily:@"MuseoSans-500"];
     }
+
+The example use [MuseoSans-500](http://www.fontsquirrel.com/fonts/Museo-Sans), a free font to use.
+
+You also have to [add the font](http://samwize.com/2012/09/14/adding-and-using-custom-font-in-ios/) to your project, and add it to info.plist.
 
 ## Author
 
