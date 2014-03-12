@@ -6,32 +6,25 @@
 #
 Pod::Spec.new do |s|
   s.name             = "UIView+CustomFonts"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of UIView+CustomFonts."
+  s.version          = "1.0.0"
+  s.summary          = "Change font family without changing the size"
   s.description      = <<-DESC
-                       An optional longer description of UIView+CustomFonts
+                       One line of code to change a custom font for a view, and also it's subviews
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Affects these views:
+                       * UILabel
+                       * UIButton
+                       * UITextField
+                       * UITextView
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/samwize/UIView-CustomFonts"
   s.license          = 'MIT'
   s.author           = { "Junda" => "junda@just2us.com" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/NAME'
+  s.source           = { :git => "https://github.com/samwize/UIView-CustomFonts.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/samwize'
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
+  s.platform     = :ios, '5.0'
   s.requires_arc = true
 
   s.source_files = 'Classes'
-  s.resources = 'Resources'
-
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
 end
