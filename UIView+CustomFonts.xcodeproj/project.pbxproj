@@ -23,7 +23,6 @@
 		3E998E4E18D08DD900FA4497 /* UIView_CustomFontsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E998E4D18D08DD900FA4497 /* UIView_CustomFontsTests.m */; };
 		3E998E5918D0902100FA4497 /* exljbris - MuseoSans-500.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3E998E5818D0902100FA4497 /* exljbris - MuseoSans-500.otf */; };
 		3E998E6518D0933E00FA4497 /* UIView+CustomFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E998E6418D0933E00FA4497 /* UIView+CustomFonts.m */; };
-		6D5A7285B7D8492C89E968DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E70AF98EAB4D4A87F860EF /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		27E70AF98EAB4D4A87F860EF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E998E1F18D08DD900FA4497 /* UIView+CustomFonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIView+CustomFonts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E998E2218D08DD900FA4497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E998E2418D08DD900FA4497 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,7 +58,6 @@
 		3E998E5818D0902100FA4497 /* exljbris - MuseoSans-500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "exljbris - MuseoSans-500.otf"; sourceTree = "<group>"; };
 		3E998E6318D0933E00FA4497 /* UIView+CustomFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomFonts.h"; sourceTree = "<group>"; };
 		3E998E6418D0933E00FA4497 /* UIView+CustomFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomFonts.m"; sourceTree = "<group>"; };
-		9554095B54FD4AF7A7F76ADC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +68,6 @@
 				3E998E2518D08DD900FA4497 /* CoreGraphics.framework in Frameworks */,
 				3E998E2718D08DD900FA4497 /* UIKit.framework in Frameworks */,
 				3E998E2318D08DD900FA4497 /* Foundation.framework in Frameworks */,
-				6D5A7285B7D8492C89E968DD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +91,6 @@
 				3E998E4718D08DD900FA4497 /* UIView+CustomFontsTests */,
 				3E998E2118D08DD900FA4497 /* Frameworks */,
 				3E998E2018D08DD900FA4497 /* Products */,
-				9554095B54FD4AF7A7F76ADC /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,7 +110,6 @@
 				3E998E2418D08DD900FA4497 /* CoreGraphics.framework */,
 				3E998E2618D08DD900FA4497 /* UIKit.framework */,
 				3E998E4118D08DD900FA4497 /* XCTest.framework */,
-				27E70AF98EAB4D4A87F860EF /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,11 +183,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E998E5118D08DD900FA4497 /* Build configuration list for PBXNativeTarget "UIView+CustomFonts" */;
 			buildPhases = (
-				9B5A260046804059943274E5 /* Check Pods Manifest.lock */,
 				3E998E1B18D08DD900FA4497 /* Sources */,
 				3E998E1C18D08DD900FA4497 /* Frameworks */,
 				3E998E1D18D08DD900FA4497 /* Resources */,
-				2E15B44992EB4DB69DCFF808 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,39 +268,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2E15B44992EB4DB69DCFF808 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9B5A260046804059943274E5 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E998E1B18D08DD900FA4497 /* Sources */ = {
@@ -440,7 +399,6 @@
 		};
 		3E998E5218D08DD900FA4497 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9554095B54FD4AF7A7F76ADC /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -454,7 +412,6 @@
 		};
 		3E998E5318D08DD900FA4497 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9554095B54FD4AF7A7F76ADC /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

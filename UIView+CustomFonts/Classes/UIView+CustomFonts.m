@@ -51,9 +51,12 @@
     if ([self isKindOfClass:[UINavigationBar class]]) {
         UINavigationBar *navbar = (UINavigationBar *)self;
         UIFont *font = (navbar.titleTextAttributes)[NSFontAttributeName];
+        int fontSize = font.pointSize;  // Default navbar title font size
+        if (font == nil)
+            fontSize = 18;
         NSMutableDictionary *attributes = [NSMutableDictionary dictionaryWithDictionary:navbar.titleTextAttributes];
-        [attributes setValue:[UIFont fontWithName:fontFamily size:font.pointSize] forKey:NSFontAttributeName];
-        navbar.titleTextAttributes = [NSDictionary dictionaryWithDictionary:attributes];
+        attributes[NSFontAttributeName] = [UIFont fontWithName:fontFamily size:fontSize];
+        navbar.titleTextAttributes = attributes;
     }
     
     // If to affect subviews, recursively call this method on each subview
