@@ -1,0 +1,7 @@
+pod "UIView+CustomFonts", :path => "../UIView+CustomFonts.podspec"
+
+target "Demo" do
+end
+
+target "DemoTests" do
+end
