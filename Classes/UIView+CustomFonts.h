@@ -1,6 +1,5 @@
 //
-//  UIView+CustomFont.h
-//  PooKeeper
+//  UIView+CustomFonts.h
 //
 //  Created by Junda on 12/3/14.
 //  Copyright (c) 2014 Just2us. All rights reserved.

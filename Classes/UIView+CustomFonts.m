@@ -1,6 +1,5 @@
 //
-//  UIView+CustomFont.m
-//  PooKeeper
+//  UIView+CustomFonts.m
 //
 //  Created by Junda on 12/3/14.
 //  Copyright (c) 2014 Just2us. All rights reserved.
@@ -13,7 +12,7 @@
 */
 
 
-#import "UIView+CustomFont.h"
+#import "UIView+CustomFonts.h"
 
 @implementation UIView (CustomFont)
 
@@ -34,7 +33,7 @@
         UIButton *button = (UIButton *)self;
         button.titleLabel.font = [UIFont fontWithName:fontFamily size:button.titleLabel.font.pointSize];
     }
-    
+
     // If to affect subviews, recursively call this method on each subview
     if (affectSubviews) {
         for (UIView *subviews in self.subviews) {
