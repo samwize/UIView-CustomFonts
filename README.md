@@ -38,3 +38,7 @@ Junda, junda@just2us.com
 
 UIView+CustomFonts is available under the MIT license. See the LICENSE file for more info.
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/samwize/uiview-customfonts/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
